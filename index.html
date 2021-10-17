@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/fabicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/fabicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/fabicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/fabicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/fabicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/fabicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/fabicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/fabicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/fabicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/fabicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/fabicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/fabicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/fabicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/fabicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="./assets/fabicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/general-dist.css">
+        <link rel="stylesheet" href="./styles/header-dist.css">
+        <link rel="stylesheet" href="./styles/main-dist.css">
+        <link rel="stylesheet" href="./styles/footer-dist.css">
+        <link rel="stylesheet" href="./styles/load-dist.css">
+    <title>Integrador Frontend</title>
+</head>
+
+<body>
+    <!-- Animación de carga de página -->
+    <div class="loader" id="loader">
+        <div class="flash"></div>
+        <div class="semi-circulo semi-circulo1">
+            <div class="semi-circulo semi-circulo2"></div>
+        </div>
+        <div class="pelota pelota1">
+            <div class="pelota pelota1b"></div>
+            <div class="pelota letra-d pelota1c"></div>
+            <div class="pelota letra-d pelota1d"></div>
+        </div>
+        <div class="pelota pelota2">
+            <div class="pelota pelota2b"></div>
+            <div class="pelota letra-a pelota2c"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span>Conf Bs As</span>
+            </div>
+            <div class="links">
+                <a href="#loby" onclick="ToggleClose()"><i class="fas fa-building"></i>Conferencia</a>
+                <a href="#speakers" onclick="ToggleClose()"><i class="fas fa-users"></i>Oradores</a>
+                <a href="#place" onclick="ToggleClose()"><i class="fas fa-address-book"></i>Lugar y fecha</a>
+                <a href="#be-speaker" onclick="ToggleClose()"><i class="fas fa-user-plus"></i>Conviértete en orador</a>
+                <a href="#"><i class="fas fa-credit-card"></i>Comprar tickets</a>
+            </div>
+        </nav>
+        <button type="button" class="toggle" onclick="Toggle()"></button>
+    </header>
+
+    <main>
+        <section class="loby" id="loby">
+            <img src="./assets/images/ba720.jpg" alt="El Palacio de Aguas Corrientes de la ciudad de Buenos Aires" srcset="./assets/images/ba480.jpg 2x">
+            <!-- <picture>
+                <source media="(min-width: 1200px)" srcset="./assets/images/ba720.jpg">
+                <img src="./assets/images/ba480.jpg" alt="El Palacio de Aguas Corrientes de Bs As">
+            </picture> -->
+            <div class="zona-de-escritura">
+                <h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+                    conocimiento y la experiencia de los expertos que están creando el futuro de Internet. Ven a conocer
+                    a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que
+                    tenemos para ti. ¡Te esperamos!</p>
+                <div>
+                    <a href="#be-speaker">Quiero ser orador</a>
+                    <a href="#"><span></span><span></span><span></span><span></span>Comprar tickets</a>
+                </div>
+            </div>
+        </section>
+        <section class="speakers" id="speakers">
+            <span>Conoce a los</span>
+            <h2>Oradores</h2>
+            <span>Click me!</span>
+            <div class="cards-container">
+                <button type="button" class="" onclick="PreviousImg()"><i class="fas fa-angle-left"></i></button>
+
+                <div class="card">
+                    <img src="./assets/images/codoacodo.png" alt="Logo de Codo a Codo">
+
+                    <img src="./assets/images/steve-jobs.png" alt="Steve Jobs" class="img-speaker checked">
+                    <div class="description checked">
+                        <samp class="business">Negocios</samp>
+                        <samp class="startup">Startup</samp>
+                        <h3>Steve Jobs</h3>
+                        <p>Fundador de Apple. Lo resucitamos para convertirlo en orador de Codo a Codo... ¡en serio!</p>
+                    </div>
+
+                    <img src="./assets/images/bill-gates.png" alt="Bill Gates" class="img-speaker">
+                    <div class="description">
+                        <samp class="js">JavaScript</samp>
+                        <samp class="react">React</samp>
+                        <h3>Bill Gates</h3>
+                        <p>Empresario y filántropo, fundador de Microsoft. Hipotecamos la patagonia para contratarlo.
+                        </p>
+                    </div>
+
+                    <img src="./assets/images/ada-lovelace.png" alt="Ada Lovelace" class="img-speaker">
+                    <div class="description">
+                        <samp class="js">JavaScript</samp>
+                        <samp class="react">React</samp>
+                        <h3>Ada Lovelace</h3>
+                        <p>Matemática y escritora británica. Viajamos en el tiempo para contratarla como oradora.</p>
+                    </div>
+
+                </div>
+
+                <button type="button" class="" onclick="NextImg()"><i class="fas fa-angle-right"></i></button>
+            </div>
+
+        </section>
+
+        <section class="place" id="place">
+            <div class="zona-de-escritura">
+                <h2>Bs As - Octubre</h2>
+                <p>Ciudad de Buenos Aires es la capital y ciudad más poblada de la República Argentina. Esta metrópolis
+                    es una ciudad autónoma que constituye uno de los 24 distritos que conforman el país. Tiene sus
+                    propios poderes ejecutivo, legislativo y judicial. Está situada en la región centro-este del país,
+                    sobre la orilla sur del Río de la Plata, en la región pampeana.</p>
+                <a href="#">Conocé más</a>
+            </div>
+
+            <!-- <img src="./assets/images/buenos-aires720.jpg" alt="Buenos Aires" srcset="./assets/images/buenos-aires480.jpg 2x"> -->
+            <video src="./assets/videos/bs-as.mp4" autoplay muted loop></video>
+            <img src="./assets/images/mask720.jpg" alt="Máscara" srcset="./assets/images/mask480.jpg 2x">
+
+        </section>
+
+        <section class="be-speaker" id="be-speaker">
+            <div class="zona-de-escritura">
+                <span>Conviértete en un</span>
+                <h2>Orador</h2>
+                <p>Anotate como orador para dar una <span>charla ignite</span>. ¡Contanos de qué querés hablar!</p>
+                <form action="#">
+                    <div class="input-container">
+                        <input type="text" id="name" required>
+                        <label for="name">Nombre</label>
+                        <!-- <span>Nombre</span> -->
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="last-name" required>
+                        <label for="last-name">Apellido</label>
+                        <!-- <span>Apellido</span> -->
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="tel" required>
+                        <label for="tel">Telefono</label>
+                        <!-- <span>Telefono</span> -->
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                        <!-- <span>Email</span> -->
+                    </div>
+                    <div class="input-container">
+                        <textarea id="talk-about" required></textarea>
+                        <label for="talk-about">¿Sobre qué querés hablar?</label>
+                        <!-- <span>¿Sobre qué querés hablar?</span> -->
+                        <p><small>Recuerda incluir un título para tu charla</small></p>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Prensa</a>
+            <a href="#">Conferencias</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Estudiantes</a>
+        </nav>
+    </footer>
+
+    <script src="./js/vanilla-tilt.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/load.js"></script>
+</body>
+
+</html>
