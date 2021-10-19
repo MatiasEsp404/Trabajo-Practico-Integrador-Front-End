@@ -165,6 +165,7 @@ header .navbar {
 	background: #97c93e;
 	border-color: #90c532;
 	color: #fff;
+	cursor: pointer;
 }
 
 .buy-tickets form .calculation-area {
