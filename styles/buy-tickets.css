@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+header.fin, footer.fin {
+    display: block;
+}
+
+header .navbar {
+    background: #222;
+}
+
+.buy-tickets {
+	margin: 0 10vw;
+	padding-top: 150px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.buy-tickets .btns-container {
+	display: flex;
+	margin-bottom: 20px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.buy-tickets .btns-container button {
+	margin: 5px;
+	cursor: pointer;
+	background: #fff;
+	border: 2px solid;
+}
+
+.buy-tickets .btns-container button .btn-text-zone {
+	margin: 20px;
+}
+
+.buy-tickets .btns-container button.btn-student {
+	border-color: #067eff;
+}
+
+.buy-tickets .btns-container button.btn-trainee {
+	border-color: #1ca2b8;
+}
+
+.buy-tickets .btns-container button.btn-junior {
+	border-color: #fdc00b;
+}
+
+.buy-tickets .btns-container button .btn-title {
+	font-weight: 600;
+	font-size: 1.6em;
+}
+
+.buy-tickets .btns-container button .btn-text {
+	font-size: 1.3em;
+}
+
+.buy-tickets .btns-container button .btn-discount {
+	font-weight: 600;
+	font-size: 1.4em;
+}
+
+.buy-tickets .btns-container button .btn-subtext {
+	font-size: 1.1em;
+	color: grey;
+}
+
+.buy-tickets .title {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #222;
+	margin: 0;
+	margin-top: 20px;
+}
+
+.buy-tickets .subtitle {
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.buy-tickets .text-zone {
+	max-width: 925px;
+	width: 100%;
+}
+
+.buy-tickets form {
+	margin: auto;
+	text-align: center;
+}
+
+.buy-tickets form .input-container,
+.buy-tickets form input[type="submit"],
+.buy-tickets form input[type="reset"],
+.buy-tickets form .calculation-area {
+	margin-top: 1.6em;
+	position: relative;
+	width: 47%;
+	display: inline-block;
+}
+
+.buy-tickets form .input-container.complete-line,
+.buy-tickets form .calculation-area {
+	width: 94.5%;
+}
+
+.buy-tickets form .input-container input,
+.buy-tickets form .input-container select,
+.buy-tickets form input[type="submit"],
+.buy-tickets form input[type="reset"],
+.buy-tickets form .calculation-area {
+	height: 36px;
+	border: 1px solid #6c757d;
+	border-radius: 5px;
+}
+
+.buy-tickets form .input-container input:focus,
+.buy-tickets form .input-container select:focus {
+	outline: 1px solid #0d6efd;
+}
+
+.buy-tickets form .input-container label {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	font-size: 0.9em;
+	user-select: none;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.buy-tickets form .input-container input:focus + label,
+.buy-tickets form .input-container input:valid + label,
+.buy-tickets form .input-container select:valid + label {
+	top: -20px;
+	left: 0;
+	font-size: 0.8em;
+}
+
+.buy-tickets form .input-container input,
+.buy-tickets form .input-container select {
+	width: 100%;
+}
+
+.buy-tickets form .input-container #email {
+	width: 100%;
+}
+.buy-tickets form input[type="submit"],
+.buy-tickets form input[type="reset"] {
+	background: #97c93e;
+	border-color: #90c532;
+	color: #fff;
+}
+
+.buy-tickets form .calculation-area {
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	background: #cce5ff;
+	border-color: #b7daff;
+}
+
+.buy-tickets form .calculation-area p {
+	margin: 0 10px;
+	font-size: 0.9em;
+	user-select: none;
+	pointer-events: none;
+	color: #0140a4;
+}
+
+@media (max-width: 500px) {
+	.buy-tickets form .input-container,
+	.buy-tickets form input[type="submit"],
+	.buy-tickets form input[type="reset"],
+	.buy-tickets form .calculation-area {
+		width: 95%;
+	}
+	.buy-tickets .subtitle{
+		text-align: center;
+	}
+}
