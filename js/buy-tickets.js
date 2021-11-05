@@ -35,4 +35,3 @@ setInterval(() => {
 const studentButton = () => category.selectedIndex = 1
 const traineeButton = () => category.selectedIndex = 2
 const juniorButton = () => category.selectedIndex = 3
-

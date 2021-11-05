@@ -8,9 +8,9 @@ body {
 	margin: 0;
 }
 
-header.fin, footer.fin {
+/* header.fin, footer.fin {
     display: block;
-}
+} */
 
 header .navbar {
     background: #222;
